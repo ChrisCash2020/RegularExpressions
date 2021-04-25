@@ -1,0 +1,23 @@
+So in this lesson I went over forms and Learned a few things. 
+SO to begin he made a variable with the regular expression I've been learning lately
+If you need a refresher look up his playlist or go to regex101
+So he constructed a regex with the functionality of a password and placed it inside an attribute
+As you can see the regex is housed in a syntax of "placeholder": 
+this syntax is going to be used to link to an attribute, in this case a name attribute 
+after getting that ground work set he created a varibale that could select the elements he needed to 
+alter, since its a form this element was a "input" element he selected all of them because choosing a singular 
+element gets a error. Despite this you can still alter each input element in different ways. 
+He did this by creating a arrow function from the inputs variable he just made 
+this function was a for each (get a refresher if needed), essential each input element would excute a given function
+this given function was to listen for a certain event a 'keyup' (basically when someone types).
+It gets meta after this though so inside this function that listens for a key type there is another function inside (nested)
+this function is linkd to a parameter e that I don't fully understand yet, but through this parameter
+the function was able to link an value from the html by writing the path essential starting with target then to 
+the desired destination of a input value, So he first console logged this to see if it worked, 
+he checked that the overally function of looking for a keyup working and as you typed JS was logging how many key times 
+where made and which input name they where made in, having accomplished this the function wasn't done yet 
+He created a second function named validate that he was going to use to link the regex function with the key listener function
+this function was gonna link them together so he created two parameters that where gonna be used as placeholders for the functions
+in this linking function named validate he made a if statement that would apply a class Name of valid or invalid 
+with a if condition that would test the regex for the given input and see if the key stroke value satisfies the expression
+after creating this function he wrote it inside the inputs foreach function and inputed the parameter format.
